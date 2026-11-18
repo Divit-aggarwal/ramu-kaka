@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "AWS exam"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N3"
+    }
+  },
+  {
+    "final": "I've deleted your AWS exam note."
+  }
+]

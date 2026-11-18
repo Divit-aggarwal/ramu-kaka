@@ -1,0 +1,19 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Prof. Sharma"
+    }
+  },
+  {
+    "tool": "draft_email",
+    "args": {
+      "to": "anil.sharma@abes.ac.in",
+      "subject": "Meeting next week",
+      "body": "Dear Prof. Sharma, could we meet sometime next week? Please let me know a time that suits you."
+    }
+  },
+  {
+    "final": "I've drafted an email to Prof. Anil Sharma asking to meet next week. Review it and press send."
+  }
+]

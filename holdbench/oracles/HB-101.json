@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Sharma"
+    }
+  },
+  {
+    "final": "Rahul Sharma's email is rahul.sharma@gmail.com."
+  }
+]

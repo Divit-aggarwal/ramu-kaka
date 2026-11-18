@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Heighers"
+    }
+  },
+  {
+    "final": "The Heighers meeting is on Sunday 22 Nov at 4pm."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "physics exam"
+    }
+  },
+  {
+    "final": "I couldn't find a physics exam in your notes."
+  }
+]

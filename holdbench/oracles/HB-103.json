@@ -1,0 +1,31 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul Verma"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Project review with Rahul Verma",
+      "time": "2026-11-20T13:30"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Verma"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 22222",
+      "text": "Hi Rahul, confirming our project review on Friday at 2pm."
+    }
+  },
+  {
+    "final": "Your review is Friday at 2pm. I've set a reminder for 1:30pm and drafted an SMS to Rahul Verma confirming it."
+  }
+]

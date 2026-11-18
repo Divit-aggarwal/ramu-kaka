@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "AWS exam"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Revise for the AWS exam",
+      "time": "2026-12-05T20:00"
+    }
+  },
+  {
+    "final": "Your AWS exam is on 6 Dec, so I've set a reminder to revise at 8pm on 5 Dec."
+  }
+]

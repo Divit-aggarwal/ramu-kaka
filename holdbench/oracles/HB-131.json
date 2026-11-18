@@ -1,0 +1,19 @@
+[
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-21T03:00",
+      "label": "Flight at 6am"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Pack for the flight",
+      "time": "2026-11-20T22:00"
+    }
+  },
+  {
+    "final": "I've set an alarm for 3am on Saturday and a reminder to pack on Friday at 10pm."
+  }
+]

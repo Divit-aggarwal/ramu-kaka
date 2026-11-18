@@ -1,0 +1,21 @@
+[
+  {
+    "ask": "What time should the alarm be, and when should I remind you to call Mom?"
+  },
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-20T06:30"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Call Mom",
+      "time": "2026-11-19T20:00"
+    }
+  },
+  {
+    "final": "I've set an alarm for 6:30am tomorrow and a reminder to call Mom at 8pm today."
+  }
+]

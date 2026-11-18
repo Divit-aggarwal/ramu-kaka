@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "Heighers poster",
+      "text": "Heighers poster due Monday"
+    }
+  },
+  {
+    "final": "I've saved a note: Heighers poster due Monday."
+  }
+]

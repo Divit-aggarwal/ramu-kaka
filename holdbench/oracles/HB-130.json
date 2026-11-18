@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "exam"
+    }
+  },
+  {
+    "final": "AWS exam: 6 Dec at 10am, bring ID. DSA midterm: 12 Dec at 10am, Hall 3."
+  }
+]

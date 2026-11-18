@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-20T06:30"
+    }
+  },
+  {
+    "final": "I've set an alarm for 6:30am tomorrow."
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "AWS exam"
+    }
+  },
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "AWS study plan",
+      "text": "Fri 20 Nov: EC2\nSat 21 Nov: S3\nSun 22 Nov: IAM"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: EC2",
+      "time": "2026-11-20T19:00"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: S3",
+      "time": "2026-11-21T19:00"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: IAM",
+      "time": "2026-11-22T19:00"
+    }
+  },
+  {
+    "final": "I've created an AWS study plan note (EC2 on Friday, S3 on Saturday, IAM on Sunday) and set a 7pm reminder for each day."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "remember_fact",
+    "args": {
+      "text": "Bike parking slot is P-17"
+    }
+  },
+  {
+    "final": "I've saved that your bike parking slot is P-17."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "Priya's birthday",
+      "text": "Priya's birthday is 14 Dec"
+    }
+  },
+  {
+    "final": "I've saved a note that Priya's birthday is 14 Dec."
+  }
+]

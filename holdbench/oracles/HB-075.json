@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "To buy",
+      "text": "Buy a charger for the M5"
+    }
+  },
+  {
+    "final": "I've saved a note: buy a charger for the M5."
+  }
+]

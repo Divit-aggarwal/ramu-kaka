@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "calculate",
+    "args": {
+      "expression": "2340/3"
+    }
+  },
+  {
+    "final": "Each person pays ₹780."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "ask": "Do you mean 6pm today or 6am tomorrow?"
+  },
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-20T06:00"
+    }
+  },
+  {
+    "final": "I've set an alarm for 6am tomorrow."
+  }
+]

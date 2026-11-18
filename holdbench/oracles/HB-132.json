@@ -1,0 +1,21 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "flight"
+    }
+  },
+  {
+    "ask": "I couldn't find a flight in your calendar. When is it?"
+  },
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-21T03:00",
+      "label": "Flight at 6am"
+    }
+  },
+  {
+    "final": "I've set an alarm for 3am on Saturday, 3 hours before your flight."
+  }
+]

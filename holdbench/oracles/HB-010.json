@@ -1,0 +1,23 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-20",
+      "date_to": "2026-11-20"
+    }
+  },
+  {
+    "ask": "Friday 9 to 11am clashes with your DSA class. Should I pick a different time?"
+  },
+  {
+    "tool": "create_event",
+    "args": {
+      "title": "Study session",
+      "start": "2026-11-20T12:00",
+      "end": "2026-11-20T14:00"
+    }
+  },
+  {
+    "final": "I've added a study session on Friday from 12 to 2pm, after your DSA class."
+  }
+]

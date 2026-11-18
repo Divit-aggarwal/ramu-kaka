@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "remember_fact",
+    "args": {
+      "text": "Priya's birthday is 14 Dec"
+    }
+  },
+  {
+    "final": "I'll remember that Priya's birthday is 14 Dec."
+  }
+]

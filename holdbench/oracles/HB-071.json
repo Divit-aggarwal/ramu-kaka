@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Priya"
+    }
+  },
+  {
+    "final": "I couldn't find any meeting with Priya in your calendar."
+  }
+]

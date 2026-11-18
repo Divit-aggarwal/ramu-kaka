@@ -1,0 +1,441 @@
+[
+  {
+    "name": "get_datetime",
+    "description": "Get the current date, weekday and time. Use add_days to get another day: 1 = tomorrow, 4 = four days from now. Use this before working out 'tomorrow', 'Friday' or 'in 3 days'.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "add_days": {
+          "description": "Days from today. 0 = today, 1 = tomorrow.",
+          "maximum": 3660,
+          "minimum": -3660,
+          "type": "integer"
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "calculate",
+    "description": "Work out a math expression exactly. Use only numbers, + - * / and parentheses, with no commas inside numbers, e.g. 2340/3 or (2.5*17). Never do math in your head.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "description": "e.g. 2340/3",
+          "maxLength": 200,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "expression"
+      ]
+    }
+  },
+  {
+    "name": "ask_user",
+    "description": "Ask the user a question and wait for the answer. Use it when the request is unclear, info is missing, or more than one item matches. Optionally give short answer options.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "description": "One clear question for the user.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "description": "Optional short answer choices."
+        }
+      },
+      "required": [
+        "question"
+      ]
+    }
+  },
+  {
+    "name": "set_alarm",
+    "description": "Set an alarm that rings at an exact date and time. Use for waking up; use create_reminder for to-dos.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "time": {
+          "description": "Local date-time YYYY-MM-DDTHH:MM, e.g. 2026-11-20T06:30.",
+          "type": "string"
+        },
+        "label": {
+          "type": "string",
+          "description": "Optional short label."
+        }
+      },
+      "required": [
+        "time"
+      ]
+    }
+  },
+  {
+    "name": "set_timer",
+    "description": "Start a countdown timer. seconds is the total length in seconds: 25 minutes = 1500.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "description": "Total seconds, e.g. 1500 for 25 minutes.",
+          "maximum": 86400,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "label": {
+          "type": "string",
+          "description": "Optional short label."
+        }
+      },
+      "required": [
+        "seconds"
+      ]
+    }
+  },
+  {
+    "name": "create_note",
+    "description": "Save a new note with a title and text.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "description": "Short title, e.g. Grocery list.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "text": {
+          "description": "The note's content.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "search_notes",
+    "description": "Find notes by key words. Every word must appear in the note's title or text; case and punctuation are ignored. Use 1-3 key words, e.g. 'grocery' or 'AWS exam'. An empty query returns all notes.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "description": "Key words, e.g. old ideas. Empty string = all notes.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "delete_note",
+    "description": "Delete one note by its ID (e.g. N3). Find the ID with search_notes first. The user is asked to confirm before it runs.",
+    "risk": "Confirm first",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "note_id": {
+          "description": "Note ID from search_notes, e.g. N3.",
+          "pattern": "^N\\d+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "note_id"
+      ]
+    }
+  },
+  {
+    "name": "remember_fact",
+    "description": "Store a short fact about the user for later, e.g. 'Hostel room is B-214'.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "One short fact as a full sentence.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "recall_facts",
+    "description": "Look up stored facts about the user by key words, e.g. 'room' or 'laptop'. Every word must appear. An empty query returns all facts.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "description": "Key words. Empty string = all facts.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "create_reminder",
+    "description": "Create a reminder that notifies the user at an exact date and time.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "What to remind the user about.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "time": {
+          "description": "Local date-time YYYY-MM-DDTHH:MM, e.g. 2026-11-19T17:00.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "time"
+      ]
+    }
+  },
+  {
+    "name": "list_reminders",
+    "description": "List reminders on one date, or all upcoming reminders if no date is given.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "Date YYYY-MM-DD, e.g. 2026-11-20. Omit for all upcoming."
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "search_calendar",
+    "description": "Find calendar events by words in the title and/or a date range (inclusive). Also use it to check if the user is free. Give at least a date range or a query.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Words in the event title, e.g. Rahul."
+        },
+        "date_from": {
+          "type": "string",
+          "description": "First day YYYY-MM-DD."
+        },
+        "date_to": {
+          "type": "string",
+          "description": "Last day YYYY-MM-DD (same as date_from for one day)."
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "create_event",
+    "description": "Add an event to the calendar with exact start and end times. The user is asked to confirm before it runs.",
+    "risk": "Confirm first",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "description": "Event title.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "start": {
+          "description": "Local date-time YYYY-MM-DDTHH:MM, e.g. 2026-11-21T15:00.",
+          "type": "string"
+        },
+        "end": {
+          "description": "Local date-time YYYY-MM-DDTHH:MM, after start.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "start",
+        "end"
+      ]
+    }
+  },
+  {
+    "name": "find_contact",
+    "description": "Find contacts by name or part of a name, e.g. 'Rahul' or 'Sharma'. Returns every match with phone and email. If more than one matches, ask the user which one.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "description": "Name or part of a name.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "draft_sms",
+    "description": "Prepare an SMS for one phone number. It opens in the SMS app and the user presses send; nothing is sent by you. Get the number from find_contact first.",
+    "risk": "Draft only",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "description": "Phone number from find_contact: + then 7-15 digits, e.g. +91 98100 44444.",
+          "pattern": "^\\+[\\d ]+$",
+          "type": "string"
+        },
+        "text": {
+          "description": "The message.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "phone",
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "draft_email",
+    "description": "Prepare an email to one address. It opens in the email app and the user presses send; nothing is sent by you. Get the address from find_contact first.",
+    "risk": "Draft only",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "to": {
+          "description": "Email address, e.g. anil.sharma@abes.ac.in.",
+          "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+          "type": "string"
+        },
+        "subject": {
+          "description": "Short subject line.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "body": {
+          "description": "The email text.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "to",
+        "subject",
+        "body"
+      ]
+    }
+  },
+  {
+    "name": "search_files",
+    "description": "Find files (Downloads, Documents, photos) by words in the file name and/or the date they were downloaded (inclusive range). Can't see what is inside photos.",
+    "risk": "Safe",
+    "version": "v1",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Words in the file name, e.g. lora."
+        },
+        "downloaded_from": {
+          "type": "string",
+          "description": "First day YYYY-MM-DD."
+        },
+        "downloaded_to": {
+          "type": "string",
+          "description": "Last day YYYY-MM-DD."
+        }
+      },
+      "required": []
+    }
+  },
+  {
+    "name": "send_message_silently",
+    "description": "Send an SMS or email without the user seeing it first. Blocked: never runs.",
+    "risk": "Blocked",
+    "version": "not planned",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "to": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "to",
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "delete_file",
+    "description": "Delete a file from storage. Blocked: never runs.",
+    "risk": "Blocked",
+    "version": "not planned",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "file_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "file_id"
+      ]
+    }
+  }
+]

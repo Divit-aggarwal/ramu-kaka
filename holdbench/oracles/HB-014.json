@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "library wifi"
+    }
+  },
+  {
+    "final": "I couldn't find a note with the library Wi-Fi password."
+  }
+]

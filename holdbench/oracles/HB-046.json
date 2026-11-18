@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Neha"
+    }
+  },
+  {
+    "final": "There's no contact named Neha, so I haven't saved anything. If you tell me her number, I can save it."
+  }
+]

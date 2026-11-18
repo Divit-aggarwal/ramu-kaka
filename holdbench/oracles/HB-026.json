@@ -1,0 +1,9 @@
+[
+  {
+    "tool": "list_reminders",
+    "args": {}
+  },
+  {
+    "final": "I can't cancel reminders yet. Your hostel fee reminder is still set for Friday at 6pm; you can remove it in the reminders app."
+  }
+]

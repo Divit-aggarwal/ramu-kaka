@@ -1,0 +1,21 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul"
+    }
+  },
+  {
+    "ask": "You have a meeting with Rahul Sharma today (ends 5pm) and a project review with Rahul Verma on Friday (ends 3pm). Which one?"
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Call Rahul Verma",
+      "time": "2026-11-20T15:00"
+    }
+  },
+  {
+    "final": "I've set a reminder to call Rahul Verma on Friday at 3pm, when your project review ends."
+  }
+]

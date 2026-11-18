@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "lab wifi"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N5"
+    }
+  },
+  {
+    "final": "I've deleted your Lab Wi-Fi note."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-09",
+      "date_to": "2026-11-15"
+    }
+  },
+  {
+    "final": "I couldn't find any events in your calendar for last week, so I can't tell how long you spent in meetings."
+  }
+]

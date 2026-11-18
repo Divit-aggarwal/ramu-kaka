@@ -1,0 +1,36 @@
+[
+  {
+    "ask": "Which Rahul (Sharma or Verma), and what time on Friday?"
+  },
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-20",
+      "date_to": "2026-11-20"
+    }
+  },
+  {
+    "tool": "create_event",
+    "args": {
+      "title": "Call with Rahul Sharma",
+      "start": "2026-11-20T16:00",
+      "end": "2026-11-20T17:00"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Sharma"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 11111",
+      "text": "Hi Rahul, let's have a call on Friday at 4pm."
+    }
+  },
+  {
+    "final": "I've added a 1-hour call with Rahul Sharma on Friday at 4pm and drafted an SMS telling him the time."
+  }
+]

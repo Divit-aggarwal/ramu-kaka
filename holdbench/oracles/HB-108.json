@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Prof. Sharma"
+    }
+  },
+  {
+    "ask": "What should the email to Prof. Sharma say?"
+  },
+  {
+    "tool": "draft_email",
+    "args": {
+      "to": "anil.sharma@abes.ac.in",
+      "subject": "Assignment deadline",
+      "body": "Dear Prof. Sharma, could you please confirm the deadline for the assignment? Thank you."
+    }
+  },
+  {
+    "final": "I've drafted an email to Prof. Anil Sharma asking about the assignment deadline."
+  }
+]

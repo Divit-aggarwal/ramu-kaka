@@ -1,0 +1,23 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "old ideas"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N1"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N2"
+    }
+  },
+  {
+    "final": "I've deleted both of your 'old ideas' notes."
+  }
+]

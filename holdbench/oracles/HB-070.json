@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "dentist"
+    }
+  },
+  {
+    "final": "Your dentist appointment is on Saturday 21 Nov at 11am."
+  }
+]

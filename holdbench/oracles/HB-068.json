@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "set_timer",
+    "args": {
+      "seconds": 600,
+      "label": "Tea"
+    }
+  },
+  {
+    "final": "I've set a 10 minute timer for your tea."
+  }
+]

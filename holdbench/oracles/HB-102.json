@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Verma"
+    }
+  },
+  {
+    "final": "There's no email address saved for Rahul Verma, only his phone number."
+  }
+]

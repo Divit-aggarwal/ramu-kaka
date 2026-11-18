@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "calculate",
+    "args": {
+      "expression": "4500/3"
+    }
+  },
+  {
+    "final": "That's ₹1,500 per month."
+  }
+]

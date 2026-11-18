@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Priya"
+    }
+  },
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "Priya contact",
+      "text": "Priya Singh: +91 98100 44444"
+    }
+  },
+  {
+    "final": "I've saved Priya's number in a note called Priya contact."
+  }
+]

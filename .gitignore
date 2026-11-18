@@ -237,3 +237,6 @@ data/raw/
 holdbench/source/
 holdbench/tasks_hidden/*
 !holdbench/tasks_hidden/README.md
+# Checkers and oracles for hidden tasks reveal those tasks
+holdbench/checkers_hidden/
+holdbench/oracles_hidden/

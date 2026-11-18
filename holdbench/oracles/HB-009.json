@@ -1,0 +1,13 @@
+[
+  {
+    "tool": "create_event",
+    "args": {
+      "title": "AWS study session",
+      "start": "2026-11-21T15:00",
+      "end": "2026-11-21T17:00"
+    }
+  },
+  {
+    "final": "I've added an AWS study session on Saturday 21 Nov, 3 to 5pm."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Sharma"
+    }
+  },
+  {
+    "ask": "You have two contacts named Sharma: Rahul Sharma and Prof. Anil Sharma. Which one?"
+  },
+  {
+    "tool": "draft_email",
+    "args": {
+      "to": "anil.sharma@abes.ac.in",
+      "subject": "Missing Friday's class",
+      "body": "Dear Prof. Sharma, I'm sorry, but I'll miss Friday's class."
+    }
+  },
+  {
+    "final": "I've drafted an email to Prof. Anil Sharma saying you'll miss Friday's class."
+  }
+]

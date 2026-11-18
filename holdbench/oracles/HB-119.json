@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-19",
+      "date_to": "2026-11-22"
+    }
+  },
+  {
+    "tool": "calculate",
+    "args": {
+      "expression": "2+2+1+0.5+1"
+    }
+  },
+  {
+    "final": "You have 6.5 hours of events from today until Sunday. Friday is the busiest, with 3 hours."
+  }
+]

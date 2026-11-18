@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "recall_facts",
+    "args": {
+      "query": "bike parking"
+    }
+  },
+  {
+    "final": "I don't have anything saved about your bike parking slot."
+  }
+]

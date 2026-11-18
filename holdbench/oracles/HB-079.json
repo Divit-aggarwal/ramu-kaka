@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-20T06:30"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Pay the hostel fees",
+      "time": "2026-11-20T08:00"
+    }
+  },
+  {
+    "final": "I've set an alarm for 6:30am tomorrow and a reminder at 8am to pay the hostel fees."
+  }
+]

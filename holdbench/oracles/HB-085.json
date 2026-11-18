@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Drink water",
+      "time": "2026-11-19T15:00"
+    }
+  },
+  {
+    "final": "I've set a reminder to drink water at 3pm."
+  }
+]

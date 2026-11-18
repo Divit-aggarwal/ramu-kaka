@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_files",
+    "args": {
+      "query": "goa"
+    }
+  },
+  {
+    "final": "I couldn't find a Goa photo. I also can't see what's inside photos, so I can't tell which one is from Goa."
+  }
+]

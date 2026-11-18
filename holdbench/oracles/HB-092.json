@@ -1,0 +1,15 @@
+[
+  {
+    "ask": "What time this evening should I remind you to call the bank?"
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Call the bank",
+      "time": "2026-11-19T19:00"
+    }
+  },
+  {
+    "final": "I've set a reminder to call the bank at 7pm today."
+  }
+]

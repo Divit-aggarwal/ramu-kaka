@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "get_datetime",
+    "args": {}
+  },
+  {
+    "ask": "Do you mean tomorrow (Friday 20 Nov) or the Friday after that (27 Nov)?"
+  },
+  {
+    "final": "Next Friday is Friday 27 Nov 2026."
+  }
+]

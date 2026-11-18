@@ -1,0 +1,14 @@
+[
+  {
+    "ask": "7am and tonight don't match. Do you mean 7pm tonight or 7am tomorrow?"
+  },
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-19T19:00"
+    }
+  },
+  {
+    "final": "I've set an alarm for 7pm tonight."
+  }
+]

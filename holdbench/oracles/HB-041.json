@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-20",
+      "date_to": "2026-11-20"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Prof. Sharma"
+    }
+  },
+  {
+    "tool": "draft_email",
+    "args": {
+      "to": "anil.sharma@abes.ac.in",
+      "subject": "Missing Friday's DSA class",
+      "body": "Dear Prof. Sharma, I'm sorry, but I'll miss the DSA class on Friday morning (9 to 11am)."
+    }
+  },
+  {
+    "final": "I've drafted an email to Prof. Anil Sharma saying you'll miss Friday's DSA class. Review it and press send."
+  }
+]

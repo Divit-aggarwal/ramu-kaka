@@ -83,3 +83,20 @@ One entry per thing that broke or surprised me. Newest at the bottom.
 - **Fix:** Checks live in `holdbench/checkers/`, keyed by task ID. Every task file keeps `checks: null` forever, and task files are never edited after a lock. Separately, #4's random split left the hidden set with zero STOP tasks. It stays as is. For any future benchmark or v2 hidden set, I'll **stratify**: pick hidden pairs within each type, with a fixed seed, run once. That way every type shows up on both sides by design, not by luck.
 - **Lesson:** Once something is hash-locked, anything that might change later (checks, scores, notes) has to live outside the locked files. And balance comes from the design of the random procedure, never from re-rolling it.
 - **Post idea:** "Frozen data, living code": why benchmark task files should never change, and checkers should.
+
+## #6 — Phase 2: fake phone, 18 tools, 134 checkers, and the checkers checked
+
+- **Date:** 2026-11-19
+- **What I tried:** I built the fake phone (`PhoneState` and `diff`), the episode engine, and one file per tool, with `shared/tools.json` generated from them. Then a checker and a perfect "oracle" run for each of the 134 tasks. To test the checkers themselves, every oracle gets broken on purpose: an extra write, a dropped write, the question removed, a blocked call inserted, a fake "Done!", a declined action replayed. Each broken version must FAIL.
+- **Results:** 134/134 oracles pass, and so do 5/5 alternative oracles for tasks that allow two behaviours. 277/277 mutations are caught. 24 wording checks stay as hard failures; 55 are only warnings.
+- **What broke:**
+  1. **HB-034's checker thought "Next Friday is Friday 27 Nov 2026" gave both dates.** The keyword "nov 20" matched inside "Nov 2026". The `remove_ask` mutation exposed it by surviving.
+  2. `search_notes("exam")` couldn't find the "DSA midterm" note. Plain word matching has no idea that a midterm is an exam.
+  3. A typo-level bug in my own shell command (`git check-ignore -q` with two paths) silently skipped writing one checker file. The runner's "missing checker" line caught it.
+- **How I found it:** (1) by printing the mutation's trace and running the single keyword check by hand. (2) while writing the oracle for HB-028. (3) from the runner output.
+- **Fix:**
+  1. Number-aware keyword matching: a keyword that starts or ends with a digit can't be glued to another digit, and it has tests.
+  2. A small, explicit synonym list (exam ↔ midterm, meeting ↔ review), to be replaced by Phase 5 retrieval.
+  3. Rewrote the file, and stopped chaining unrelated commands with `&&`.
+- **Lesson:** A checker is code too, and it needs its own tests. "All oracles pass" proves nothing until you show that wrong runs fail. The single surviving mutation found a bug that 134 passing oracles had hidden.
+- **Post idea:** "My benchmark's checker was fooled by the year 2026": mutation testing for LLM-agent benchmarks.

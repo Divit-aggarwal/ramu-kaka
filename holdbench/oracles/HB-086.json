@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "set_alarm",
+    "args": {
+      "time": "2026-11-19T15:00",
+      "label": "Nap"
+    }
+  },
+  {
+    "final": "I've set an alarm for 3pm. Enjoy your nap."
+  }
+]

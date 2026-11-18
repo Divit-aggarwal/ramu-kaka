@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-21",
+      "date_to": "2026-11-21"
+    }
+  },
+  {
+    "final": "Yes, you're free on Saturday afternoon. Your only event that day is the dentist at 11am."
+  }
+]

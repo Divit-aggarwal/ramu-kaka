@@ -1,0 +1,38 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-21",
+      "date_to": "2026-11-21"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Priya"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Aman"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 44444",
+      "text": "Dinner on Saturday at 8pm?"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 55555",
+      "text": "Dinner on Saturday at 8pm?"
+    }
+  },
+  {
+    "final": "You're free on Saturday at 8pm, so I've drafted a dinner message to Priya and to Aman."
+  }
+]

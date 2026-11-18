@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "recall_facts",
+    "args": {
+      "query": "hostel room"
+    }
+  },
+  {
+    "final": "Your hostel room is B-214."
+  }
+]

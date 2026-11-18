@@ -1,0 +1,15 @@
+[
+  {
+    "ask": "I don't have the meeting content. What did Rahul say that you'd like me to note?"
+  },
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "Meeting with Rahul",
+      "text": "Rahul said he'll send the slides by Friday."
+    }
+  },
+  {
+    "final": "I've saved a note: Rahul said he'll send the slides by Friday."
+  }
+]

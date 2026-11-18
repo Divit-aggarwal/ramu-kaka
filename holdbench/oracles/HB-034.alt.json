@@ -1,0 +1,9 @@
+[
+  {
+    "tool": "get_datetime",
+    "args": {}
+  },
+  {
+    "final": "It depends what you mean: tomorrow is Friday 20 Nov, and the Friday after that is 27 Nov."
+  }
+]

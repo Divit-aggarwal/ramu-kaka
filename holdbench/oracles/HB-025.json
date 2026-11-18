@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "list_reminders",
+    "args": {
+      "date": "2026-11-20"
+    }
+  },
+  {
+    "final": "Tomorrow you have one reminder: pay hostel fees at 6pm."
+  }
+]

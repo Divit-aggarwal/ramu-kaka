@@ -1,0 +1,18 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul Verma"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Call Rahul Verma",
+      "time": "2026-11-20T15:15"
+    }
+  },
+  {
+    "final": "Your project review ends Friday at 3pm, so I've set a reminder to call Rahul Verma at 3:15pm."
+  }
+]

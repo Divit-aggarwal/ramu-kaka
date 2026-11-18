@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "dentist"
+    }
+  },
+  {
+    "final": "I can't move calendar events yet. Your dentist appointment is still on Saturday 21 Nov at 11am."
+  }
+]

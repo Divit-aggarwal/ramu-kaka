@@ -1,0 +1,13 @@
+[
+  {
+    "tool": "search_files",
+    "args": {
+      "query": "lora",
+      "downloaded_from": "2026-11-09",
+      "downloaded_to": "2026-11-15"
+    }
+  },
+  {
+    "final": "You downloaded LoRA_paper.pdf on 12 Nov. It's in Downloads."
+  }
+]

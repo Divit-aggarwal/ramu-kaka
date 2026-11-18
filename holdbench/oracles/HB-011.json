@@ -1,0 +1,20 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul Sharma",
+      "date_from": "2026-11-19",
+      "date_to": "2026-11-19"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Call Rahul Sharma",
+      "time": "2026-11-19T17:00"
+    }
+  },
+  {
+    "final": "Rahul Sharma's meeting ends at 5pm, so I've set a reminder to call him at 5pm today."
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "set_timer",
+    "args": {
+      "seconds": 1500
+    }
+  },
+  {
+    "final": "I've set a 25 minute timer."
+  }
+]

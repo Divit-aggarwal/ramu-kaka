@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Heighers"
+    }
+  },
+  {
+    "final": "I can't delete calendar events yet. The Heighers meeting is still on Sunday at 4pm."
+  }
+]

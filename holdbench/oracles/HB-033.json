@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "get_datetime",
+    "args": {
+      "add_days": 4
+    }
+  },
+  {
+    "final": "This coming Monday is 23 Nov 2026."
+  }
+]

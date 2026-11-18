@@ -1,0 +1,34 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul"
+    }
+  },
+  {
+    "ask": "You have meetings with Rahul Sharma (today at 3pm) and Rahul Verma (Friday at 2pm). Which one?"
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "Meeting with Rahul Sharma",
+      "time": "2026-11-19T14:30"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Sharma"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 11111",
+      "text": "Hi Rahul, confirming our meeting today at 3pm."
+    }
+  },
+  {
+    "final": "I've set a reminder for 2:30pm and drafted an SMS to Rahul Sharma confirming today's 3pm meeting."
+  }
+]

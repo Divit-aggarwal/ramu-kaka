@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "exam"
+    }
+  },
+  {
+    "ask": "You have two exams: AWS on 6 Dec and the DSA midterm on 12 Dec. Which one, and how long should I block?"
+  },
+  {
+    "tool": "create_event",
+    "args": {
+      "title": "DSA midterm",
+      "start": "2026-12-12T10:00",
+      "end": "2026-12-12T12:00"
+    }
+  },
+  {
+    "final": "I've added your DSA midterm on 12 Dec, 10am to 12pm."
+  }
+]

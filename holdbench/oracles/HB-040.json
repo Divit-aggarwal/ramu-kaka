@@ -1,0 +1,27 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul"
+    }
+  },
+  {
+    "ask": "You have meetings with Rahul Sharma (today, ends 5pm) and Rahul Verma (Friday, ends 3pm). Which one?"
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Verma"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 22222",
+      "text": "Hi Rahul, I'll call you right after our review ends at 3pm."
+    }
+  },
+  {
+    "final": "I've drafted an SMS to Rahul Verma saying you'll call right after the review ends at 3pm."
+  }
+]

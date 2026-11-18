@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "recall_facts",
+    "args": {
+      "query": "laptop"
+    }
+  },
+  {
+    "final": "You have an M5 MacBook Air."
+  }
+]

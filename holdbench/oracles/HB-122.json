@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-22",
+      "date_to": "2026-11-22"
+    }
+  },
+  {
+    "final": "You're not free on Sunday at 4pm: it clashes with the Heighers meeting (4 to 5pm). I haven't drafted anything. Want to pick another time?"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "list_reminders",
+    "args": {
+      "date": "2026-11-22"
+    }
+  },
+  {
+    "final": "You have no reminders on Sunday."
+  }
+]

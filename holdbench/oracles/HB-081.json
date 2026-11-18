@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "calculate",
+    "args": {
+      "expression": "2.5*17"
+    }
+  },
+  {
+    "final": "That's 42.5 hours."
+  }
+]

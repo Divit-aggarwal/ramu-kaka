@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "date_from": "2026-11-20",
+      "date_to": "2026-11-20"
+    }
+  },
+  {
+    "final": "On Friday you have the DSA class from 9 to 11am and the project review with Rahul Verma from 2 to 3pm."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "search_calendar",
+    "args": {
+      "query": "Rahul Sharma",
+      "date_from": "2026-11-19",
+      "date_to": "2026-11-19"
+    }
+  },
+  {
+    "tool": "find_contact",
+    "args": {
+      "query": "Rahul Sharma"
+    }
+  },
+  {
+    "tool": "draft_sms",
+    "args": {
+      "phone": "+91 98100 11111",
+      "text": "Hi Rahul, I'll call you right after your meeting ends at 5pm."
+    }
+  },
+  {
+    "final": "Your meeting with Rahul Sharma ends at 5pm. I've drafted an SMS saying you'll call right after. Press send when ready."
+  }
+]

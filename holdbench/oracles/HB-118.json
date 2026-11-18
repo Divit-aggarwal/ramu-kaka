@@ -1,0 +1,42 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "exam"
+    }
+  },
+  {
+    "ask": "You have two exams: AWS (6 Dec) and the DSA midterm (12 Dec). Which one, from which day, and what time for reminders?"
+  },
+  {
+    "tool": "create_note",
+    "args": {
+      "title": "AWS study plan",
+      "text": "Fri 20 Nov: EC2\nSat 21 Nov: S3\nSun 22 Nov: IAM"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: EC2",
+      "time": "2026-11-20T19:00"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: S3",
+      "time": "2026-11-21T19:00"
+    }
+  },
+  {
+    "tool": "create_reminder",
+    "args": {
+      "text": "AWS study: IAM",
+      "time": "2026-11-22T19:00"
+    }
+  },
+  {
+    "final": "I've created your AWS study plan note and set a 7pm reminder for each of the 3 days."
+  }
+]

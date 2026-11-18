@@ -1,0 +1,19 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "AWS exam"
+    }
+  },
+  {
+    "tool": "create_event",
+    "args": {
+      "title": "AWS exam",
+      "start": "2026-12-06T10:00",
+      "end": "2026-12-06T12:00"
+    }
+  },
+  {
+    "final": "I've blocked 6 Dec, 10am to 12pm, for your AWS exam."
+  }
+]

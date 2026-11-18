@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "AWS exam"
+    }
+  },
+  {
+    "tool": "calculate",
+    "args": {
+      "expression": "(30-19)+6"
+    }
+  },
+  {
+    "final": "Your AWS exam is on 6 Dec, which is 17 days from today."
+  }
+]

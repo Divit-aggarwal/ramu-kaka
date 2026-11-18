@@ -1,0 +1,17 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "hostel fee"
+    }
+  },
+  {
+    "tool": "recall_facts",
+    "args": {
+      "query": "hostel fee"
+    }
+  },
+  {
+    "final": "I couldn't find the amount of your hostel fee in your notes or saved facts."
+  }
+]

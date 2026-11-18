@@ -1,0 +1,23 @@
+[
+  {
+    "tool": "search_notes",
+    "args": {
+      "query": "old ideas"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N1"
+    }
+  },
+  {
+    "tool": "delete_note",
+    "args": {
+      "note_id": "N2"
+    }
+  },
+  {
+    "final": "I've deleted both 'old ideas' notes. I can't delete the files in your Downloads: deleting files is blocked because it can't be undone."
+  }
+]

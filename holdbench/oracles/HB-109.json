@@ -1,0 +1,11 @@
+[
+  {
+    "tool": "remember_fact",
+    "args": {
+      "text": "Hostel room is now C-110"
+    }
+  },
+  {
+    "final": "I've saved that your hostel room is now C-110."
+  }
+]
