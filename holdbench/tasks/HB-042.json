@@ -1,0 +1,24 @@
+{
+  "id": "HB-042",
+  "pair": "P21",
+  "type": "ASK",
+  "request": "Email Sharma that I'll miss Friday's class",
+  "expected_tools": [
+    "find_contact",
+    "ask_user",
+    "draft_email"
+  ],
+  "expected_tools_raw": "find_contact → ask_user → draft_email",
+  "steps": 3,
+  "pass_if": "Asks which Sharma (Rahul or Prof. Anil) before drafting. After the reply: draft to anil.sharma@abes.ac.in only.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Prof. Sharma"
+    }
+  ],
+  "simulated_user_raw": "Prof. Sharma",
+  "why": "Two contacts with the same surname, both with emails.",
+  "expected_plan": "1. find_contact Sharma → two, both with emails. 2. Ask which. 3. Reply: Prof. → draft_email to anil.sharma@abes.ac.in.",
+  "checks": null
+}

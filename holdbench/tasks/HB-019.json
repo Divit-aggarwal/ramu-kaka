@@ -1,0 +1,17 @@
+{
+  "id": "HB-019",
+  "pair": "P10",
+  "type": "ACT",
+  "request": "Start a 25 minute timer",
+  "expected_tools": [
+    "set_timer"
+  ],
+  "expected_tools_raw": "set_timer",
+  "steps": 1,
+  "pass_if": "One timer of 1500 seconds.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "HB-118",
+  "pair": "P59",
+  "type": "ASK",
+  "request": "Make me a study plan for my exam and set reminders",
+  "expected_tools": [
+    "search_notes",
+    "ask_user",
+    "create_note",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_notes → ask_user → create_note → create_reminder ×3",
+  "steps": 6,
+  "pass_if": "Asks which exam and when, before any write. Final state identical to HB-117.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "AWS, one topic a day from tomorrow, at 7pm"
+    }
+  ],
+  "simulated_user_raw": "AWS, one topic a day from tomorrow, at 7pm",
+  "why": "Planning needs inputs it doesn't have yet.",
+  "expected_plan": "1. Two exams, no start day or time given: ask. 2. Reply: AWS, daily from tomorrow, 7pm. 3. Then the same steps as HB-117.",
+  "checks": null
+}

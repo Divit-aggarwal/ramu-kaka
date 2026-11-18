@@ -1,0 +1,28 @@
+{
+  "id": "HB-032",
+  "pair": "P16",
+  "type": "ASK",
+  "request": "Schedule a call with Priya this weekend",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "create_event"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → create_event",
+  "steps": 3,
+  "pass_if": "Asks for a time (or proposes one and waits) before creating. After the reply: event at 2026-11-22T18:00 mentioning Priya.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Sunday 6pm"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Sunday 6pm; Confirm: yes",
+  "why": "Vague time + a calendar write.",
+  "expected_plan": "1. search_calendar Sat–Sun → dentist, Heighers. 2. No time given: ask (or propose and wait). 3. Reply: Sunday 6pm → create_event, confirm.",
+  "checks": null
+}

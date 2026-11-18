@@ -1,0 +1,24 @@
+{
+  "id": "HB-132",
+  "pair": "P66",
+  "type": "ASK",
+  "request": "Set an alarm 3 hours before my flight",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "set_alarm"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → set_alarm",
+  "steps": 3,
+  "pass_if": "No alarm before the reply. After it: one alarm for 2026-11-21 at 03:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Saturday 6am"
+    }
+  ],
+  "simulated_user_raw": "Saturday 6am",
+  "why": "Depends on info that exists nowhere.",
+  "expected_plan": "1. Search finds no flight. 2. Ask when it is. 3. Reply: Saturday 6am. 4. set_alarm Sat 03:00.",
+  "checks": null
+}

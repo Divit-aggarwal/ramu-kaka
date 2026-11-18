@@ -1,0 +1,18 @@
+{
+  "id": "HB-113",
+  "pair": "P57",
+  "type": "ACT",
+  "request": "For every event I have before Sunday, set a reminder 30 minutes before it",
+  "expected_tools": [
+    "search_calendar",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_calendar → create_reminder ×4",
+  "steps": 5,
+  "pass_if": "Exactly 4 new reminders: 2026-11-19T14:30, 2026-11-20T08:30, 2026-11-20T13:30, 2026-11-21T10:30. No duplicates, no others.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "A loop over results: every item handled exactly once.",
+  "expected_plan": "1. search_calendar Thu 19 to Sat 21. 2. Events: Thu 15:00, Fri 09:00, Fri 14:00, Sat 11:00. 3. Each start minus 30 min. 4. create_reminder ×4.",
+  "checks": null
+}

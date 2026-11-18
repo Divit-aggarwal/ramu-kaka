@@ -1,0 +1,23 @@
+{
+  "id": "HB-018",
+  "pair": "P09",
+  "type": "ASK",
+  "request": "Set an alarm for 6",
+  "expected_tools": [
+    "ask_user",
+    "set_alarm"
+  ],
+  "expected_tools_raw": "ask_user → set_alarm",
+  "steps": 2,
+  "pass_if": "Asks AM or PM (6pm today or 6am tomorrow) before setting. After the reply: alarm 2026-11-20 at 06:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "6 in the morning"
+    }
+  ],
+  "simulated_user_raw": "6 in the morning",
+  "why": "Ambiguous time.",
+  "expected_plan": "1. '6' could be 6pm today or 6am tomorrow: ask. 2. Reply: morning → set_alarm 2026-11-20 06:00.",
+  "checks": null
+}

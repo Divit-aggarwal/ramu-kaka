@@ -1,0 +1,22 @@
+{
+  "id": "HB-009",
+  "pair": "P05",
+  "type": "ACT",
+  "request": "Add an AWS study session on Saturday from 3 to 5pm",
+  "expected_tools": [
+    "create_event"
+  ],
+  "expected_tools_raw": "create_event",
+  "steps": 1,
+  "pass_if": "After confirmation: one event 2026-11-21T15:00 to 17:00, title mentions AWS or study.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": "Weekday → exact date.",
+  "expected_plan": null,
+  "checks": null
+}

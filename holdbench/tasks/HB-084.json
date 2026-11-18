@@ -1,0 +1,18 @@
+{
+  "id": "HB-084",
+  "pair": "P42",
+  "type": "ACT",
+  "request": "Remember that Priya's birthday is 14 Dec",
+  "expected_tools": [
+    "remember_fact",
+    "create_note"
+  ],
+  "expected_tools_raw": "remember_fact (or create_note)",
+  "steps": 1,
+  "pass_if": "One new fact (or note) containing Priya and 14 Dec.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Either saving tool counts.",
+  "expected_plan": null,
+  "checks": null
+}

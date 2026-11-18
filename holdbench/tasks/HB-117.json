@@ -1,0 +1,19 @@
+{
+  "id": "HB-117",
+  "pair": "P59",
+  "type": "ACT",
+  "request": "Create an AWS study plan note with one topic per day starting tomorrow, using the topics in my exam note, then set a 7pm reminder for each day",
+  "expected_tools": [
+    "search_notes",
+    "create_note",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_notes → create_note → create_reminder ×3",
+  "steps": 5,
+  "pass_if": "One new note listing the 3 topics by day. Exactly 3 new reminders: 2026-11-20T19:00 (EC2), 2026-11-21T19:00 (S3), 2026-11-22T19:00 (IAM).",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Plan from data, then execute every step.",
+  "expected_plan": "1. search_notes AWS exam → topics EC2, S3, IAM. 2. Map days: Fri 20 = EC2, Sat 21 = S3, Sun 22 = IAM. 3. create_note with the plan. 4. create_reminder ×3 at 19:00, each naming its topic.",
+  "checks": null
+}

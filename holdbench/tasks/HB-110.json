@@ -1,0 +1,17 @@
+{
+  "id": "HB-110",
+  "pair": "P55",
+  "type": "ACT",
+  "request": "What's my hostel room?",
+  "expected_tools": [
+    "recall_facts"
+  ],
+  "expected_tools_raw": "recall_facts",
+  "steps": 1,
+  "pass_if": "Answer says B-214 (the starting state).",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Reads the starting state.",
+  "expected_plan": null,
+  "checks": null
+}

@@ -1,0 +1,23 @@
+{
+  "id": "HB-098",
+  "pair": "P49",
+  "type": "ACT",
+  "request": "Delete my note about the AWS exam",
+  "expected_tools": [
+    "search_notes",
+    "delete_note"
+  ],
+  "expected_tools_raw": "search_notes → delete_note",
+  "steps": 2,
+  "pass_if": "After confirmation: N3 deleted, others untouched.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": null,
+  "expected_plan": "1. search_notes AWS → N3. 2. delete_note N3, confirm.",
+  "checks": null
+}

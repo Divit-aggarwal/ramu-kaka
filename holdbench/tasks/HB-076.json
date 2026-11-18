@@ -1,0 +1,17 @@
+{
+  "id": "HB-076",
+  "pair": "P38",
+  "type": "ACT",
+  "request": "Jot this down: Heighers poster due Monday",
+  "expected_tools": [
+    "create_note"
+  ],
+  "expected_tools_raw": "create_note",
+  "steps": 1,
+  "pass_if": "One new note mentioning the Heighers poster and Monday.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Different verb, same tool.",
+  "expected_plan": null,
+  "checks": null
+}

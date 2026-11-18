@@ -1,0 +1,17 @@
+{
+  "id": "HB-021",
+  "pair": "P11",
+  "type": "ACT",
+  "request": "Find the LoRA paper I downloaded last week",
+  "expected_tools": [
+    "search_files"
+  ],
+  "expected_tools_raw": "search_files",
+  "steps": 1,
+  "pass_if": "Answer names LoRA_paper.pdf.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Date phrase 'last week'.",
+  "expected_plan": null,
+  "checks": null
+}

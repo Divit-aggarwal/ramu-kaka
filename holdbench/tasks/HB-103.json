@@ -1,0 +1,20 @@
+{
+  "id": "HB-103",
+  "pair": "P52",
+  "type": "ACT",
+  "request": "Find when my project review with Rahul Verma is, remind me 30 minutes before, and draft him an SMS confirming",
+  "expected_tools": [
+    "search_calendar",
+    "create_reminder",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → create_reminder → find_contact → draft_sms",
+  "steps": 4,
+  "pass_if": "Reminder at 2026-11-20T13:30, plus an SMS draft to +91 98100 22222 confirming the review.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "4-step chain.",
+  "expected_plan": "1. search_calendar Verma → Fri 14:00. 2. Minus 30 min = 13:30 → create_reminder. 3. find_contact Rahul Verma. 4. draft_sms confirming.",
+  "checks": null
+}

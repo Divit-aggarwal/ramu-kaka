@@ -1,0 +1,22 @@
+{
+  "id": "HB-051",
+  "pair": "P26",
+  "type": "ACT",
+  "request": "Add a gym session tomorrow from 7 to 8am",
+  "expected_tools": [
+    "create_event"
+  ],
+  "expected_tools_raw": "create_event",
+  "steps": 1,
+  "pass_if": "After confirmation: event 2026-11-20T07:00 to 08:00.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

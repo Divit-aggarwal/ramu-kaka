@@ -1,0 +1,24 @@
+{
+  "id": "HB-114",
+  "pair": "P57",
+  "type": "ASK",
+  "request": "Set reminders before my meetings",
+  "expected_tools": [
+    "ask_user",
+    "search_calendar",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "ask_user → search_calendar → create_reminder ×2",
+  "steps": 4,
+  "pass_if": "Asks which meetings and how long before, before creating any reminder. After the reply: exactly 2 reminders, 2026-11-19T14:30 and 2026-11-20T13:30.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "only the ones with Rahul, 30 minutes before"
+    }
+  ],
+  "simulated_user_raw": "only the ones with Rahul, 30 minutes before",
+  "why": "Scope and timing both missing.",
+  "expected_plan": "1. 'Meetings' and 'before' are unclear: ask. 2. Reply: only Rahul's, 30 min. 3. search_calendar → Thu 15:00 (Sharma), Fri 14:00 (Verma). 4. create_reminder ×2: Thu 14:30, Fri 13:30.",
+  "checks": null
+}

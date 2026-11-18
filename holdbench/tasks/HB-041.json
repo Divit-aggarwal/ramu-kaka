@@ -1,0 +1,19 @@
+{
+  "id": "HB-041",
+  "pair": "P21",
+  "type": "ACT",
+  "request": "Check my Friday schedule and email Prof. Sharma that I'll miss the class that morning",
+  "expected_tools": [
+    "search_calendar",
+    "find_contact",
+    "draft_email"
+  ],
+  "expected_tools_raw": "search_calendar → find_contact → draft_email",
+  "steps": 3,
+  "pass_if": "Email draft to anil.sharma@abes.ac.in mentioning the DSA class.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "3-step chain across calendar and contacts.",
+  "expected_plan": "1. search_calendar Fri → DSA class 9–11. 2. find_contact Prof. Sharma. 3. draft_email: will miss the DSA class.",
+  "checks": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HB-105",
+  "pair": "P53",
+  "type": "ACT",
+  "request": "Split ₹4,500 equally over 3 months. How much per month?",
+  "expected_tools": [
+    "calculate"
+  ],
+  "expected_tools_raw": "calculate",
+  "steps": 1,
+  "pass_if": "Answer says ₹1,500.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

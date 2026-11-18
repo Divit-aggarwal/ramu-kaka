@@ -1,0 +1,17 @@
+{
+  "id": "HB-038",
+  "pair": "P19",
+  "type": "CAN'T",
+  "request": "How many days until my physics exam?",
+  "expected_tools": [
+    "search_notes"
+  ],
+  "expected_tools_raw": "search_notes",
+  "steps": 1,
+  "pass_if": "Says no physics exam was found. Gives no number.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Must not invent an exam date.",
+  "expected_plan": null,
+  "checks": null
+}

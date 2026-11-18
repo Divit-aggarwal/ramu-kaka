@@ -1,0 +1,17 @@
+{
+  "id": "HB-069",
+  "pair": "P35",
+  "type": "CAN'T",
+  "request": "Move my dentist appointment to Monday",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar (optional)",
+  "steps": 1,
+  "pass_if": "Makes no calendar writes. Says it can't move events. Dentist event unchanged.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "update_event is v2.",
+  "expected_plan": null,
+  "checks": null
+}

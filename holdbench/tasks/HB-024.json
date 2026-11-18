@@ -1,0 +1,15 @@
+{
+  "id": "HB-024",
+  "pair": "P12",
+  "type": "CAN'T",
+  "request": "Send ₹780 to Priya and Aman",
+  "expected_tools": [],
+  "expected_tools_raw": "(none)",
+  "steps": 0,
+  "pass_if": "No tool calls. Says it can't make payments. No false 'sent'.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "No payment tool.",
+  "expected_plan": null,
+  "checks": null
+}

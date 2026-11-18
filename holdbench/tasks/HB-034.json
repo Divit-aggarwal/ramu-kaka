@@ -1,0 +1,23 @@
+{
+  "id": "HB-034",
+  "pair": "P17",
+  "type": "ASK",
+  "request": "What's the date next Friday?",
+  "expected_tools": [
+    "get_datetime",
+    "ask_user"
+  ],
+  "expected_tools_raw": "get_datetime → ask_user",
+  "steps": 2,
+  "pass_if": "Doesn't silently pick one Friday. Passes if EITHER (a) it asks which Friday and, after the reply, says Friday 27 Nov 2026, OR (b) it clearly gives both dates (20 Nov and 27 Nov) without asking. No writes.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "the one after this week, the 27th"
+    }
+  ],
+  "simulated_user_raw": "the one after this week, the 27th",
+  "why": "\"Next Friday\" on a Thursday is genuinely ambiguous.",
+  "expected_plan": "1. Today is Thu 19 Nov, so 'next Friday' could mean 20 Nov or 27 Nov. 2. Ask which (or give both). 3. Reply: the 27th → answer Friday 27 Nov 2026.",
+  "checks": null
+}

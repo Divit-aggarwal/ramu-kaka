@@ -1,0 +1,17 @@
+{
+  "id": "HB-029",
+  "pair": "P15",
+  "type": "ACT",
+  "request": "Save a note: Priya's birthday is on 14 Dec",
+  "expected_tools": [
+    "create_note"
+  ],
+  "expected_tools_raw": "create_note",
+  "steps": 1,
+  "pass_if": "One new note containing Priya and 14 Dec.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

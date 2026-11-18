@@ -1,0 +1,30 @@
+{
+  "id": "HB-134",
+  "pair": "P67",
+  "type": "ASK",
+  "request": "Schedule a 1-hour call with Rahul on Friday and text him the time",
+  "expected_tools": [
+    "ask_user",
+    "search_calendar",
+    "create_event",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "ask_user → search_calendar → create_event → find_contact → draft_sms",
+  "steps": 5,
+  "pass_if": "Asks which Rahul and what time before any write. After the reply: event 2026-11-20T16:00 to 17:00 and one draft to +91 98100 11111 mentioning 4pm.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Rahul Sharma, 4pm"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Rahul Sharma, 4pm; Confirm: yes",
+  "why": "Long plan with two missing inputs.",
+  "expected_plan": "1. Which Rahul and what time are unclear: ask. 2. Reply: Rahul Sharma, 4pm. 3. search_calendar Fri 16:00 → free. 4. create_event, confirm. 5. find_contact, draft_sms mentioning 4pm.",
+  "checks": null
+}

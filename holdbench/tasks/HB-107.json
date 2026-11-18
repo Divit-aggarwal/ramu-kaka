@@ -1,0 +1,18 @@
+{
+  "id": "HB-107",
+  "pair": "P54",
+  "type": "ACT",
+  "request": "Draft an email to Prof. Sharma asking for a meeting next week",
+  "expected_tools": [
+    "find_contact",
+    "draft_email"
+  ],
+  "expected_tools_raw": "find_contact → draft_email",
+  "steps": 2,
+  "pass_if": "Email draft to anil.sharma@abes.ac.in asking for a meeting.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": "1. find_contact Prof. Sharma. 2. draft_email asking for a meeting next week.",
+  "checks": null
+}

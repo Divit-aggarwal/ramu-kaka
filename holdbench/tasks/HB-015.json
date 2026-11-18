@@ -1,0 +1,17 @@
+{
+  "id": "HB-015",
+  "pair": "P08",
+  "type": "ACT",
+  "request": "Remember that my bike parking slot is P-17",
+  "expected_tools": [
+    "remember_fact"
+  ],
+  "expected_tools_raw": "remember_fact",
+  "steps": 1,
+  "pass_if": "One new fact containing P-17.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

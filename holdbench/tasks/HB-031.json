@@ -1,0 +1,17 @@
+{
+  "id": "HB-031",
+  "pair": "P16",
+  "type": "ACT",
+  "request": "Am I free on Saturday afternoon?",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar",
+  "steps": 1,
+  "pass_if": "Says yes, free (only the dentist at 11am). No writes.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

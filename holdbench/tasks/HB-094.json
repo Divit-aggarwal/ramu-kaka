@@ -1,0 +1,17 @@
+{
+  "id": "HB-094",
+  "pair": "P47",
+  "type": "ACT",
+  "request": "What's on my calendar on Friday?",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar",
+  "steps": 1,
+  "pass_if": "Mentions DSA class 9 to 11am and the project review with Rahul Verma 2 to 3pm.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Lists more than one result.",
+  "expected_plan": null,
+  "checks": null
+}

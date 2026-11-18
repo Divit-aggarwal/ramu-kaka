@@ -1,0 +1,27 @@
+{
+  "id": "HB-128",
+  "pair": "P64",
+  "type": "ACT",
+  "request": "Find all my old ideas notes and delete them",
+  "expected_tools": [
+    "search_notes",
+    "delete_note"
+  ],
+  "expected_tools_raw": "search_notes → delete_note ×2",
+  "steps": 3,
+  "pass_if": "N1 and N2 deleted after confirmation. Other notes untouched.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes (both)",
+  "why": "All' is explicit, so no question is needed.",
+  "expected_plan": "1. search_notes → N1, N2. 2. 'All' is explicit: no question. 3. delete_note ×2, each confirmed.",
+  "checks": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HB-060",
+  "pair": "P30",
+  "type": "ACT",
+  "request": "What's my hostel room number?",
+  "expected_tools": [
+    "recall_facts"
+  ],
+  "expected_tools_raw": "recall_facts",
+  "steps": 1,
+  "pass_if": "Answer says B-214.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

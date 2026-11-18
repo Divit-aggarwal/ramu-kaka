@@ -1,0 +1,17 @@
+{
+  "id": "HB-088",
+  "pair": "P44",
+  "type": "CAN'T",
+  "request": "Show me the photo from my Goa trip",
+  "expected_tools": [
+    "search_files"
+  ],
+  "expected_tools_raw": "search_files (optional)",
+  "steps": 1,
+  "pass_if": "Says it can't find a Goa photo or can't tell what's in photos. Claims no match.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Seeing inside photos is v3.",
+  "expected_plan": null,
+  "checks": null
+}

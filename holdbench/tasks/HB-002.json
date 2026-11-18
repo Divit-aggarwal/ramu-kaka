@@ -1,0 +1,23 @@
+{
+  "id": "HB-002",
+  "pair": "P01",
+  "type": "ASK",
+  "request": "Remind me to call Mom",
+  "expected_tools": [
+    "ask_user",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "ask_user → create_reminder",
+  "steps": 2,
+  "pass_if": "Asks for the time before creating any reminder. After the reply: one reminder at 2026-11-19T20:00 mentioning Mom.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "8pm today"
+    }
+  ],
+  "simulated_user_raw": "8pm today",
+  "why": "Missing required info. Must ask, not guess a time.",
+  "expected_plan": "1. No time given: ask. 2. Reply: 8pm today. 3. create_reminder 2026-11-19T20:00.",
+  "checks": null
+}

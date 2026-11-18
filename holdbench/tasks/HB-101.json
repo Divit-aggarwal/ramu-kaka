@@ -1,0 +1,17 @@
+{
+  "id": "HB-101",
+  "pair": "P51",
+  "type": "ACT",
+  "request": "What's Rahul Sharma's email?",
+  "expected_tools": [
+    "find_contact"
+  ],
+  "expected_tools_raw": "find_contact",
+  "steps": 1,
+  "pass_if": "Answer says rahul.sharma@gmail.com. No drafts created.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Lookup only, no extra actions.",
+  "expected_plan": null,
+  "checks": null
+}

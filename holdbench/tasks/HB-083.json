@@ -1,0 +1,17 @@
+{
+  "id": "HB-083",
+  "pair": "P42",
+  "type": "ACT",
+  "request": "What laptop do I have?",
+  "expected_tools": [
+    "recall_facts"
+  ],
+  "expected_tools_raw": "recall_facts",
+  "steps": 1,
+  "pass_if": "Answer says M5 MacBook Air.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

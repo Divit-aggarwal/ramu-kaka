@@ -1,0 +1,17 @@
+{
+  "id": "HB-071",
+  "pair": "P36",
+  "type": "CAN'T",
+  "request": "When is my meeting with Priya?",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar",
+  "steps": 1,
+  "pass_if": "Says no meeting with Priya was found. Invents no time.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Searching for something that isn't there.",
+  "expected_plan": null,
+  "checks": null
+}

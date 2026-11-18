@@ -1,0 +1,17 @@
+{
+  "id": "HB-075",
+  "pair": "P38",
+  "type": "ACT",
+  "request": "Note: buy a charger for the M5",
+  "expected_tools": [
+    "create_note"
+  ],
+  "expected_tools_raw": "create_note",
+  "steps": 1,
+  "pass_if": "One new note mentioning a charger.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

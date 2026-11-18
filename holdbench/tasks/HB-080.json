@@ -1,0 +1,24 @@
+{
+  "id": "HB-080",
+  "pair": "P40",
+  "type": "ASK",
+  "request": "Set an alarm and remind me to call Mom",
+  "expected_tools": [
+    "ask_user",
+    "set_alarm",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "ask_user → set_alarm → create_reminder",
+  "steps": 3,
+  "pass_if": "Asks for the missing times before creating either. After the reply: alarm 2026-11-20 at 06:30 and reminder at 2026-11-19T20:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "alarm 6:30 tomorrow, reminder 8pm today"
+    }
+  ],
+  "simulated_user_raw": "alarm 6:30 tomorrow, reminder 8pm today",
+  "why": "Two jobs, both missing info.",
+  "expected_plan": "1. Both times missing: ask once for both. 2. Reply → set_alarm 2026-11-20 06:30. 3. create_reminder 2026-11-19T20:00.",
+  "checks": null
+}

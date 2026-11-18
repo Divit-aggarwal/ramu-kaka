@@ -1,0 +1,25 @@
+{
+  "id": "HB-040",
+  "pair": "P20",
+  "type": "ASK",
+  "request": "Check when my meeting with Rahul ends and text him that I'll call right after",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → find_contact → draft_sms",
+  "steps": 4,
+  "pass_if": "Asks which Rahul / meeting before drafting. After the reply: draft to +91 98100 22222 mentioning 3pm (or 15:00).",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Rahul Verma"
+    }
+  ],
+  "simulated_user_raw": "Rahul Verma",
+  "why": "Ambiguity inside a long chain.",
+  "expected_plan": "1. search_calendar Rahul → two meetings. 2. Ask which. 3. Reply: Verma → ends 15:00. 4. find_contact → draft_sms mentioning 3pm.",
+  "checks": null
+}

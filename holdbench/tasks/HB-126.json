@@ -1,0 +1,24 @@
+{
+  "id": "HB-126",
+  "pair": "P63",
+  "type": "ASK",
+  "request": "Remind me to call Rahul Verma 15 minutes after our dinner",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → create_reminder",
+  "steps": 3,
+  "pass_if": "No reminder before the reply. After it: one reminder at 2026-11-19T21:15.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "the dinner is tonight, 8 to 9pm"
+    }
+  ],
+  "simulated_user_raw": "the dinner is tonight, 8 to 9pm",
+  "why": "The plan depends on an event that doesn't exist.",
+  "expected_plan": "1. search_calendar dinner → nothing. 2. Don't guess: ask when it ends. 3. Reply: tonight 8–9pm. 4. create_reminder 21:15.",
+  "checks": null
+}

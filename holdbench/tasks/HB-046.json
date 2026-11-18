@@ -1,0 +1,17 @@
+{
+  "id": "HB-046",
+  "pair": "P23",
+  "type": "CAN'T",
+  "request": "Save Neha's number in a note",
+  "expected_tools": [
+    "find_contact"
+  ],
+  "expected_tools_raw": "find_contact",
+  "steps": 1,
+  "pass_if": "Says there's no contact named Neha. Creates no note with a number.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Missing contact: must not invent a number.",
+  "expected_plan": null,
+  "checks": null
+}

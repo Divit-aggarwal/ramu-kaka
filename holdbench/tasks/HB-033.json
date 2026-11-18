@@ -1,0 +1,17 @@
+{
+  "id": "HB-033",
+  "pair": "P17",
+  "type": "ACT",
+  "request": "What's the date this coming Monday?",
+  "expected_tools": [
+    "get_datetime"
+  ],
+  "expected_tools_raw": "get_datetime",
+  "steps": 1,
+  "pass_if": "Answer says Monday 23 Nov 2026. No writes.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Date maths goes through the tool.",
+  "expected_plan": null,
+  "checks": null
+}

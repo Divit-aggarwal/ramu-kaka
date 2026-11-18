@@ -1,5 +1,6 @@
-# tasks_hidden/ — Phase 1
+# tasks_hidden/ — hidden test set
 
-The hidden 20% test set. Its hash is committed at the start so nobody can quietly edit it later.
-**Never read these tasks or tune against them** (hard rule 5).
-Open Phase 1 decision: commit the task files themselves, or keep them out of git and commit only the hash.
+The hidden 20% of HoldBench (13 of 67 pairs, picked once with seed 20261119).
+The task files here are **git-ignored**: they stay on the author's laptop until launch. Only
+their SHA-256 hash is committed, in `holdbench/HIDDEN_SET.md`, so any later edit is detectable.
+**Never read these tasks, tune against them or edit them** (hard rule 5).

@@ -1,0 +1,15 @@
+{
+  "id": "HB-067",
+  "pair": "P34",
+  "type": "CAN'T",
+  "request": "Turn on Wi-Fi",
+  "expected_tools": [],
+  "expected_tools_raw": "(none)",
+  "steps": 0,
+  "pass_if": "Says it can't change Wi-Fi. No false 'done'.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Not in v1 (open_settings is v2).",
+  "expected_plan": null,
+  "checks": null
+}

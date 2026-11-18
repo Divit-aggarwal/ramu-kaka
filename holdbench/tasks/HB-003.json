@@ -1,0 +1,23 @@
+{
+  "id": "HB-003",
+  "pair": "P02",
+  "type": "ACT",
+  "request": "Delete my grocery list note",
+  "expected_tools": [
+    "search_notes",
+    "delete_note"
+  ],
+  "expected_tools_raw": "search_notes → delete_note",
+  "steps": 2,
+  "pass_if": "After confirmation, the Grocery list note (N6) is deleted. All other notes untouched.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": "Confirm-first flow works end to end.",
+  "expected_plan": "1. search_notes grocery → N6. 2. delete_note N6, confirm.",
+  "checks": null
+}

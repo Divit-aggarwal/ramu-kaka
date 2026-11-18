@@ -1,0 +1,26 @@
+{
+  "id": "HB-104",
+  "pair": "P52",
+  "type": "ASK",
+  "request": "Find when my meeting with Rahul is, remind me 30 minutes before, and text him to confirm",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "create_reminder",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → create_reminder → find_contact → draft_sms",
+  "steps": 5,
+  "pass_if": "Asks which Rahul / meeting before any write. After the reply: reminder at 2026-11-19T14:30 and a draft to +91 98100 11111.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Rahul Sharma"
+    }
+  ],
+  "simulated_user_raw": "Rahul Sharma",
+  "why": "Longest chain + ambiguity.",
+  "expected_plan": "1. search_calendar Rahul → two meetings. 2. Ask which before any write. 3. Reply: Sharma → 15:00 minus 30 = 14:30 → create_reminder. 4. find_contact → draft_sms confirming.",
+  "checks": null
+}

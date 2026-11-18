@@ -60,7 +60,7 @@ line to Kotlin for the Android app.
 
 ## HoldBench
 
-HoldBench is the benchmark built alongside the agent. It has about 110 tasks that run
+HoldBench is the benchmark built alongside the agent. It has 134 tasks (67 pairs) that run
 against a fake phone (a sandbox), arranged as pairs: in one task of each pair the agent
 should act, and in the other it should hold back. At least 30% of the tasks need more than
 one step. 20% are a hidden test set, locked at the start by publishing a hash of it
@@ -70,7 +70,7 @@ every task.
 ## Roadmap
 
 - [x] **0. Environment setup**: repo, local model returns a tool call, MLX confirmed
-- [ ] **1. Benchmark design**: ~110 tasks, act/hold-back pairs, hidden set hash-locked
+- [x] **1. Benchmark design**: 134 tasks in 67 act/hold-back pairs, hidden set hash-locked
 - [ ] **2. Sandbox + 18 tools**: fake phone, checkers, perfect reference solutions
 - [ ] **3. Harness**: prompt builder, parser, validation, risk enforcement, traces
 - [ ] **4. Baseline**: all models × all tasks × 3 runs

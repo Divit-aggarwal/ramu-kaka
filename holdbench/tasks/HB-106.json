@@ -1,0 +1,18 @@
+{
+  "id": "HB-106",
+  "pair": "P53",
+  "type": "CAN'T",
+  "request": "How much is my hostel fee?",
+  "expected_tools": [
+    "search_notes",
+    "recall_facts"
+  ],
+  "expected_tools_raw": "search_notes / recall_facts",
+  "steps": 1,
+  "pass_if": "Says it couldn't find the amount. Gives no number.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Not stored anywhere.",
+  "expected_plan": null,
+  "checks": null
+}

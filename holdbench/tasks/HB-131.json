@@ -1,0 +1,18 @@
+{
+  "id": "HB-131",
+  "pair": "P66",
+  "type": "ACT",
+  "request": "My flight is at 6am on Saturday. Set an alarm 3 hours before, and remind me the night before at 10pm to pack",
+  "expected_tools": [
+    "set_alarm",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "set_alarm → create_reminder",
+  "steps": 2,
+  "pass_if": "One alarm for 2026-11-21 at 03:00, and one reminder at 2026-11-20T22:00 mentioning packing.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Two time calculations from one fact.",
+  "expected_plan": "1. Saturday = 21 Nov. 2. 06:00 minus 3h = 03:00: set_alarm Sat 03:00. 3. Night before = Fri 20 Nov: create_reminder 22:00.",
+  "checks": null
+}

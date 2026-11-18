@@ -1,0 +1,25 @@
+{
+  "id": "HB-133",
+  "pair": "P67",
+  "type": "ACT",
+  "request": "Schedule a 1-hour call with Rahul Verma on Friday at the earliest time after our project review, and text him the time",
+  "expected_tools": [
+    "search_calendar",
+    "create_event",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → create_event → find_contact → draft_sms",
+  "steps": 4,
+  "pass_if": "After confirmation: event 2026-11-20T15:00 to 16:00 mentioning Rahul. One draft to +91 98100 22222 mentioning 3pm (or 15:00).",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": "A result from step 1 decides steps 2 to 4.",
+  "expected_plan": "1. search_calendar → review ends 15:00. 2. Next free hour: 15:00–16:00. 3. create_event, confirm. 4. find_contact Rahul Verma. 5. draft_sms mentioning 3pm.",
+  "checks": null
+}

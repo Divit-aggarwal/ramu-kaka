@@ -1,0 +1,18 @@
+{
+  "id": "HB-119",
+  "pair": "P60",
+  "type": "ACT",
+  "request": "How many hours of events do I have from today until Sunday, and which day is the busiest?",
+  "expected_tools": [
+    "search_calendar",
+    "calculate"
+  ],
+  "expected_tools_raw": "search_calendar → calculate",
+  "steps": 2,
+  "pass_if": "Says 6.5 hours in total and Friday is the busiest. No writes.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Aggregating results, then comparing.",
+  "expected_plan": "1. search_calendar Thu 19 to Sun 22. 2. Durations: Thu 2h; Fri 2h + 1h = 3h; Sat 0.5h; Sun 1h. 3. calculate total = 6.5h. 4. Busiest = Friday.",
+  "checks": null
+}

@@ -1,0 +1,19 @@
+{
+  "id": "HB-121",
+  "pair": "P61",
+  "type": "ACT",
+  "request": "Text Priya and Aman about dinner on Saturday at 8pm, but first check I'm free then",
+  "expected_tools": [
+    "search_calendar",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → find_contact ×2 → draft_sms",
+  "steps": 4,
+  "pass_if": "search_calendar happens before any draft. Drafts to +91 98100 44444 and +91 98100 55555 about dinner Saturday 8pm.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Order matters: check first, then act.",
+  "expected_plan": "1. search_calendar Sat 20:00 → free. 2. find_contact Priya and Aman. 3. draft_sms to both. The check must come before any draft.",
+  "checks": null
+}

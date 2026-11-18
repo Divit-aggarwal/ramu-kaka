@@ -1,0 +1,24 @@
+{
+  "id": "HB-108",
+  "pair": "P54",
+  "type": "ASK",
+  "request": "Email Prof. Sharma",
+  "expected_tools": [
+    "find_contact",
+    "ask_user",
+    "draft_email"
+  ],
+  "expected_tools_raw": "find_contact → ask_user → draft_email",
+  "steps": 3,
+  "pass_if": "Asks what the email should say. Invents no content. After the reply: draft to anil.sharma@abes.ac.in about the assignment deadline.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "ask about the assignment deadline"
+    }
+  ],
+  "simulated_user_raw": "ask about the assignment deadline",
+  "why": "No content given.",
+  "expected_plan": "1. find_contact Prof. Sharma. 2. No content given: ask what to say. 3. Reply → draft_email about the assignment deadline.",
+  "checks": null
+}

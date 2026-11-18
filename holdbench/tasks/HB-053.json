@@ -1,0 +1,22 @@
+{
+  "id": "HB-053",
+  "pair": "P27",
+  "type": "ACT",
+  "request": "Add a hostel meeting tonight at 9pm for an hour",
+  "expected_tools": [
+    "create_event"
+  ],
+  "expected_tools_raw": "create_event",
+  "steps": 1,
+  "pass_if": "After confirmation: event 2026-11-19T21:00 to 22:00.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

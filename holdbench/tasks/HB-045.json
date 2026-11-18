@@ -1,0 +1,18 @@
+{
+  "id": "HB-045",
+  "pair": "P23",
+  "type": "ACT",
+  "request": "Save Priya's number in a note called Priya contact",
+  "expected_tools": [
+    "find_contact",
+    "create_note"
+  ],
+  "expected_tools_raw": "find_contact → create_note",
+  "steps": 2,
+  "pass_if": "One new note titled Priya contact containing +91 98100 44444.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Copying data between apps.",
+  "expected_plan": "1. find_contact Priya → +91 98100 44444. 2. create_note 'Priya contact' with the number.",
+  "checks": null
+}

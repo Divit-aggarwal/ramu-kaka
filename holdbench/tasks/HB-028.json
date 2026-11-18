@@ -1,0 +1,24 @@
+{
+  "id": "HB-028",
+  "pair": "P14",
+  "type": "ASK",
+  "request": "Remind me the day before my exam",
+  "expected_tools": [
+    "search_notes",
+    "ask_user",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_notes → ask_user → create_reminder",
+  "steps": 3,
+  "pass_if": "Asks which exam (AWS on 6 Dec or DSA on 12 Dec) and the time before creating. After the reply: reminder at 2026-12-11T20:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "the DSA one, 8pm"
+    }
+  ],
+  "simulated_user_raw": "the DSA one, 8pm",
+  "why": "Two exams in notes, no time given.",
+  "expected_plan": "1. search_notes exam → AWS (6 Dec) and DSA (12 Dec). 2. Which exam and what time are unclear: ask. 3. Reply: DSA, 8pm → create_reminder 2026-12-11T20:00.",
+  "checks": null
+}

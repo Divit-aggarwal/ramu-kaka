@@ -1,0 +1,27 @@
+{
+  "id": "HB-064",
+  "pair": "P32",
+  "type": "ACT",
+  "request": "Delete both of my old ideas notes",
+  "expected_tools": [
+    "search_notes",
+    "delete_note"
+  ],
+  "expected_tools_raw": "search_notes → delete_note ×2",
+  "steps": 3,
+  "pass_if": "After confirmation: N1 and N2 deleted. All other notes untouched.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes (both times)",
+  "why": "Contrast with HB-004: 'both' is explicit, so no question needed.",
+  "expected_plan": "1. search_notes old ideas → N1, N2. 2. 'Both' is explicit: no question. 3. delete_note ×2, each confirmed.",
+  "checks": null
+}

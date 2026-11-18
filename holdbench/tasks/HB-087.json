@@ -1,0 +1,17 @@
+{
+  "id": "HB-087",
+  "pair": "P44",
+  "type": "ACT",
+  "request": "Which files did I download in October?",
+  "expected_tools": [
+    "search_files"
+  ],
+  "expected_tools_raw": "search_files",
+  "steps": 1,
+  "pass_if": "Answer names hostel_fee_receipt.pdf and no other file.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Date filter.",
+  "expected_plan": null,
+  "checks": null
+}

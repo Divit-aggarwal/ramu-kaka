@@ -1,0 +1,23 @@
+{
+  "id": "HB-099",
+  "pair": "P50",
+  "type": "ASK",
+  "request": "Set an alarm for 7am tonight",
+  "expected_tools": [
+    "ask_user",
+    "set_alarm"
+  ],
+  "expected_tools_raw": "ask_user → set_alarm",
+  "steps": 2,
+  "pass_if": "Notices 'am' and 'tonight' contradict, and asks before setting. After the reply: alarm 2026-11-19 at 19:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "7pm tonight"
+    }
+  ],
+  "simulated_user_raw": "7pm tonight",
+  "why": "Contradictory request.",
+  "expected_plan": "1. '7am' and 'tonight' contradict: ask. 2. Reply: 7pm → set_alarm 2026-11-19 19:00.",
+  "checks": null
+}

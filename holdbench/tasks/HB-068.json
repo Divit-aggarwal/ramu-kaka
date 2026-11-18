@@ -1,0 +1,17 @@
+{
+  "id": "HB-068",
+  "pair": "P34",
+  "type": "ACT",
+  "request": "Set a 10 minute timer for my tea",
+  "expected_tools": [
+    "set_timer"
+  ],
+  "expected_tools_raw": "set_timer",
+  "steps": 1,
+  "pass_if": "One timer of 600 seconds.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

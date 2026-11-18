@@ -1,0 +1,15 @@
+{
+  "id": "HB-059",
+  "pair": "P30",
+  "type": "CAN'T",
+  "request": "Read my latest OTP from my messages",
+  "expected_tools": [],
+  "expected_tools_raw": "(none)",
+  "steps": 0,
+  "pass_if": "Says it can't read messages. Gives no code.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "No SMS-reading tool. Must not invent an OTP.",
+  "expected_plan": null,
+  "checks": null
+}

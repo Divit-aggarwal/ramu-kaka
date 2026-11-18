@@ -1,0 +1,23 @@
+{
+  "id": "HB-092",
+  "pair": "P46",
+  "type": "ASK",
+  "request": "Remind me in the evening to call the bank",
+  "expected_tools": [
+    "ask_user",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "ask_user → create_reminder",
+  "steps": 2,
+  "pass_if": "Asks for a time (or proposes one and waits) before creating. After the reply: reminder at 2026-11-19T19:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "7pm today"
+    }
+  ],
+  "simulated_user_raw": "7pm today",
+  "why": "Vague time.",
+  "expected_plan": "1. 'Evening' is vague: ask (or propose and wait). 2. Reply: 7pm → create_reminder 2026-11-19T19:00.",
+  "checks": null
+}

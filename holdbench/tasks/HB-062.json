@@ -1,0 +1,17 @@
+{
+  "id": "HB-062",
+  "pair": "P31",
+  "type": "ACT",
+  "request": "Find the AWS syllabus file",
+  "expected_tools": [
+    "search_files"
+  ],
+  "expected_tools_raw": "search_files",
+  "steps": 1,
+  "pass_if": "Answer names AWS_syllabus.pdf.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

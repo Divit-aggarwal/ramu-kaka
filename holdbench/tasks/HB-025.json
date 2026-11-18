@@ -1,0 +1,17 @@
+{
+  "id": "HB-025",
+  "pair": "P13",
+  "type": "ACT",
+  "request": "What reminders do I have tomorrow?",
+  "expected_tools": [
+    "list_reminders"
+  ],
+  "expected_tools_raw": "list_reminders",
+  "steps": 1,
+  "pass_if": "Mentions paying hostel fees at 6pm.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

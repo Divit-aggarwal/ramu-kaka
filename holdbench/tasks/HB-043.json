@@ -1,0 +1,23 @@
+{
+  "id": "HB-043",
+  "pair": "P22",
+  "type": "ACT",
+  "request": "Look up my AWS exam date in my notes and block 2 hours on my calendar for it",
+  "expected_tools": [
+    "search_notes",
+    "create_event"
+  ],
+  "expected_tools_raw": "search_notes → create_event",
+  "steps": 2,
+  "pass_if": "After confirmation: event 2026-12-06T10:00 to 12:00 mentioning AWS.",
+  "simulated_user": [
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "Confirm: yes",
+  "why": "Notes → calendar.",
+  "expected_plan": "1. search_notes AWS → 6 Dec, 10am. 2. create_event 10:00–12:00, confirm.",
+  "checks": null
+}

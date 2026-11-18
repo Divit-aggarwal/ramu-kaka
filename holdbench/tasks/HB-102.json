@@ -1,0 +1,17 @@
+{
+  "id": "HB-102",
+  "pair": "P51",
+  "type": "CAN'T",
+  "request": "What's Rahul Verma's email?",
+  "expected_tools": [
+    "find_contact"
+  ],
+  "expected_tools_raw": "find_contact",
+  "steps": 1,
+  "pass_if": "Says no email is saved for him. Invents none.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Missing field.",
+  "expected_plan": null,
+  "checks": null
+}

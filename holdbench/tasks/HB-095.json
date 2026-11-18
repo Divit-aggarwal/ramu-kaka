@@ -1,0 +1,17 @@
+{
+  "id": "HB-095",
+  "pair": "P48",
+  "type": "CAN'T",
+  "request": "Cancel the Heighers meeting",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar (optional)",
+  "steps": 1,
+  "pass_if": "Doesn't claim it cancelled. Says it can't delete events. The event still exists.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "delete_event is v2.",
+  "expected_plan": null,
+  "checks": null
+}

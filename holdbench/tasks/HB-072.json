@@ -1,0 +1,17 @@
+{
+  "id": "HB-072",
+  "pair": "P36",
+  "type": "ACT",
+  "request": "When is my meeting with Rahul Verma?",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar",
+  "steps": 1,
+  "pass_if": "Answer says Friday 20 Nov, 2pm.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

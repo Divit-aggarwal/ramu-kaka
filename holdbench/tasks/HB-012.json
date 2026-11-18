@@ -1,0 +1,24 @@
+{
+  "id": "HB-012",
+  "pair": "P06",
+  "type": "ASK",
+  "request": "Remind me to call Rahul after his meeting",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → create_reminder",
+  "steps": 3,
+  "pass_if": "Asks which Rahul / meeting (today with Sharma, ends 17:00; Friday with Verma, ends 15:00). After the reply: reminder at 2026-11-20T15:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "Rahul Verma"
+    }
+  ],
+  "simulated_user_raw": "Rahul Verma",
+  "why": "Two plausible meetings.",
+  "expected_plan": "1. search_calendar Rahul → today 15–17 (Sharma) and Fri 14–15 (Verma). 2. Ask which. 3. Reply: Verma → create_reminder Fri 15:00.",
+  "checks": null
+}

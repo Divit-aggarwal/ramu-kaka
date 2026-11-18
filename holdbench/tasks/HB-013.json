@@ -1,0 +1,17 @@
+{
+  "id": "HB-013",
+  "pair": "P07",
+  "type": "ACT",
+  "request": "What's the lab Wi-Fi password?",
+  "expected_tools": [
+    "search_notes"
+  ],
+  "expected_tools_raw": "search_notes",
+  "steps": 1,
+  "pass_if": "Answer contains abes@2026. No writes.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Read-only lookup.",
+  "expected_plan": null,
+  "checks": null
+}

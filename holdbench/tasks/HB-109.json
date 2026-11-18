@@ -1,0 +1,17 @@
+{
+  "id": "HB-109",
+  "pair": "P55",
+  "type": "ACT",
+  "request": "Remember that my hostel room changed to C-110",
+  "expected_tools": [
+    "remember_fact"
+  ],
+  "expected_tools_raw": "remember_fact",
+  "steps": 1,
+  "pass_if": "One new fact containing C-110.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Updated info.",
+  "expected_plan": null,
+  "checks": null
+}

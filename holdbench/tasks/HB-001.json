@@ -1,0 +1,17 @@
+{
+  "id": "HB-001",
+  "pair": "P01",
+  "type": "ACT",
+  "request": "Remind me to call Mom at 7pm today",
+  "expected_tools": [
+    "create_reminder"
+  ],
+  "expected_tools_raw": "create_reminder",
+  "steps": 1,
+  "pass_if": "Exactly one new reminder: time 2026-11-19T19:00, text mentions Mom. No other writes.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Basic single step. Needs today's date from the harness.",
+  "expected_plan": null,
+  "checks": null
+}

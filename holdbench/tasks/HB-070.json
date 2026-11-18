@@ -1,0 +1,17 @@
+{
+  "id": "HB-070",
+  "pair": "P35",
+  "type": "ACT",
+  "request": "When is my dentist appointment?",
+  "expected_tools": [
+    "search_calendar"
+  ],
+  "expected_tools_raw": "search_calendar",
+  "steps": 1,
+  "pass_if": "Answer says Saturday 21 Nov, 11am.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

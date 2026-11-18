@@ -1,0 +1,18 @@
+{
+  "id": "HB-027",
+  "pair": "P14",
+  "type": "ACT",
+  "request": "Check my notes for when my AWS exam is and remind me to revise at 8pm the day before",
+  "expected_tools": [
+    "search_notes",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "search_notes → create_reminder",
+  "steps": 2,
+  "pass_if": "One reminder at 2026-12-05T20:00 mentioning AWS or revise.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Multi-step with date maths.",
+  "expected_plan": "1. search_notes AWS → 6 Dec. 2. Day before = 5 Dec. 3. create_reminder 2026-12-05T20:00.",
+  "checks": null
+}

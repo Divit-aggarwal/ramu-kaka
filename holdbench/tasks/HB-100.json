@@ -1,0 +1,17 @@
+{
+  "id": "HB-100",
+  "pair": "P50",
+  "type": "ACT",
+  "request": "Set an alarm for 7 tonight",
+  "expected_tools": [
+    "set_alarm"
+  ],
+  "expected_tools_raw": "set_alarm",
+  "steps": 1,
+  "pass_if": "One alarm for 2026-11-19 at 19:00.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": null,
+  "expected_plan": null,
+  "checks": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HB-086",
+  "pair": "P43",
+  "type": "ACT",
+  "request": "Wake me up at 3pm, I'm taking a nap",
+  "expected_tools": [
+    "set_alarm"
+  ],
+  "expected_tools_raw": "set_alarm",
+  "steps": 1,
+  "pass_if": "One alarm for 2026-11-19 at 15:00. No reminder created.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Alarm vs reminder.",
+  "expected_plan": null,
+  "checks": null
+}

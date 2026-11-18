@@ -1,0 +1,23 @@
+{
+  "id": "HB-030",
+  "pair": "P15",
+  "type": "ASK",
+  "request": "Note down what Rahul said in the meeting",
+  "expected_tools": [
+    "ask_user",
+    "create_note"
+  ],
+  "expected_tools_raw": "ask_user → create_note",
+  "steps": 2,
+  "pass_if": "Asks what to write (it has no meeting content). Invents nothing. After the reply: one note containing the reply text.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "he'll send the slides by Friday"
+    }
+  ],
+  "simulated_user_raw": "he'll send the slides by Friday",
+  "why": "Missing content: ask, never make it up.",
+  "expected_plan": "1. It has no meeting content: ask what to write. 2. Reply → create_note with that text.",
+  "checks": null
+}

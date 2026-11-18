@@ -1,0 +1,19 @@
+{
+  "id": "HB-039",
+  "pair": "P20",
+  "type": "ACT",
+  "request": "Check when my meeting with Rahul Sharma ends and text him that I'll call right after",
+  "expected_tools": [
+    "search_calendar",
+    "find_contact",
+    "draft_sms"
+  ],
+  "expected_tools_raw": "search_calendar → find_contact → draft_sms",
+  "steps": 3,
+  "pass_if": "One SMS draft to +91 98100 11111 mentioning 5pm (or 17:00) or calling after the meeting.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "3-step chain.",
+  "expected_plan": "1. search_calendar → Sharma meeting ends 17:00. 2. find_contact Rahul Sharma. 3. draft_sms: will call after 5pm.",
+  "checks": null
+}

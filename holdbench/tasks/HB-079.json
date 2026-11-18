@@ -1,0 +1,18 @@
+{
+  "id": "HB-079",
+  "pair": "P40",
+  "type": "ACT",
+  "request": "Set a 6:30 alarm for tomorrow and remind me at 8am to pay the hostel fees",
+  "expected_tools": [
+    "set_alarm",
+    "create_reminder"
+  ],
+  "expected_tools_raw": "set_alarm → create_reminder",
+  "steps": 2,
+  "pass_if": "One alarm for 2026-11-20 at 06:30, and one new reminder at 2026-11-20T08:00 about hostel fees.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Two jobs in one message.",
+  "expected_plan": "1. set_alarm 2026-11-20 06:30. 2. create_reminder 2026-11-20T08:00 about hostel fees.",
+  "checks": null
+}

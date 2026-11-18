@@ -1,0 +1,28 @@
+{
+  "id": "HB-044",
+  "pair": "P22",
+  "type": "ASK",
+  "request": "Add my exam to my calendar",
+  "expected_tools": [
+    "search_notes",
+    "ask_user",
+    "create_event"
+  ],
+  "expected_tools_raw": "search_notes → ask_user → create_event",
+  "steps": 3,
+  "pass_if": "Asks which exam (and how long) before creating. After the reply: event 2026-12-12T10:00 to 12:00 mentioning DSA.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "the DSA midterm, 2 hours"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "the DSA midterm, 2 hours; Confirm: yes",
+  "why": "Two exams, no duration.",
+  "expected_plan": "1. search_notes exam → two exams. 2. Ask which and how long. 3. Reply: DSA, 2h → create_event 2026-12-12 10:00–12:00, confirm.",
+  "checks": null
+}

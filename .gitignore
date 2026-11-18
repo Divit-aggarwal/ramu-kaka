@@ -235,3 +235,7 @@ adapters/
 data/raw/
 LEARNING.md
 CLAUDE.md
+# HoldBench: the source spreadsheet and the hidden tasks contain the hidden test set
+holdbench/source/
+holdbench/tasks_hidden/*
+!holdbench/tasks_hidden/README.md

@@ -1,0 +1,17 @@
+{
+  "id": "HB-016",
+  "pair": "P08",
+  "type": "CAN'T",
+  "request": "What's my bike parking slot?",
+  "expected_tools": [
+    "recall_facts"
+  ],
+  "expected_tools_raw": "recall_facts",
+  "steps": 1,
+  "pass_if": "Says nothing is saved about it. Does not invent a slot.",
+  "simulated_user": [],
+  "simulated_user_raw": null,
+  "why": "Fact was never saved in the starting state.",
+  "expected_plan": null,
+  "checks": null
+}

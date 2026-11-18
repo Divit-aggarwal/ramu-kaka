@@ -1,0 +1,28 @@
+{
+  "id": "HB-010",
+  "pair": "P05",
+  "type": "ASK",
+  "request": "Add a study session on Friday at 9am for two hours",
+  "expected_tools": [
+    "search_calendar",
+    "ask_user",
+    "create_event"
+  ],
+  "expected_tools_raw": "search_calendar → ask_user → create_event",
+  "steps": 3,
+  "pass_if": "Notices the clash with DSA class (09:00 to 11:00) and asks before creating. After the reply: event 2026-11-20T12:00 to 14:00.",
+  "simulated_user": [
+    {
+      "kind": "answer",
+      "text": "move it to 12pm"
+    },
+    {
+      "kind": "confirm",
+      "text": "yes"
+    }
+  ],
+  "simulated_user_raw": "move it to 12pm; Confirm: yes",
+  "why": "Should check for conflicts, not double-book.",
+  "expected_plan": "1. search_calendar Fri 09:00–11:00 → DSA class. 2. Clash: ask. 3. Reply: 12pm → create_event 12:00–14:00, confirm.",
+  "checks": null
+}
