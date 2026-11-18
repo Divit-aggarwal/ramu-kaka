@@ -1,0 +1,26 @@
+[project]
+name = "ramu-kaka"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "divit aggarwal", email = "theagihustler@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=1.31.0",
+    "mlx-lm>=0.32.2",
+    "openai>=3.55.1",
+    "pydantic>=2.14.3",
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+ramu-kaka = "ramu_kaka:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

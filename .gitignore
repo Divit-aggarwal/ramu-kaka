@@ -221,3 +221,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Ramu Kaka ---
+.venv/
+.env
+.DS_Store
+# models/: ignore everything except the README (a bare "models/" would block re-including it)
+models/*
+!models/README.md
+*.gguf
+*.safetensors
+adapters/
+data/raw/
+LEARNING.md
+CLAUDE.md
